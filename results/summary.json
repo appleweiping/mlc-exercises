@@ -1,0 +1,20 @@
+{
+  "ex1_matmul_relu": {
+    "naive_err": 2.288818359375e-05,
+    "sched_err": 2.288818359375e-05,
+    "naive_ms": 3.279825,
+    "sched_ms": 0.78228,
+    "speedup": 4.19264841233318
+  },
+  "ex2_model_err_emit_te": 1.1920928955078125e-07,
+  "ex2_model_err_vendor_func": 1.1920928955078125e-07,
+  "ex2_fashion_mnist_accuracy": 0.845,
+  "ex2_fashion_mnist_n": 2000,
+  "ex3_naive_ms": 169.11266666666668,
+  "ex3_random_search_ms": 7.669216666666667,
+  "ex3_random_search_speedup": 22.050839612042083,
+  "ex3_meta_schedule_ms": 4.9008,
+  "ex3_meta_schedule_speedup": 34.50715529437371,
+  "ex4_import_err": 1.4901161193847656e-08,
+  "total_seconds": 416.33526945114136
+}

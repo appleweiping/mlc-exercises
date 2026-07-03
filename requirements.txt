@@ -1,0 +1,11 @@
+# Core: Apache TVM (post-Unity refactor) provides TensorIR, Relax, meta-schedule.
+apache-tvm==0.25.0.post1
+# Model definition / reference + PyTorch->Relax import (torch.fx frontend).
+torch==2.12.1
+torchvision
+# Numerics, plotting, testing.
+numpy>=2.0
+matplotlib>=3.8
+pytest>=8.0
+# meta-schedule cost model.
+xgboost

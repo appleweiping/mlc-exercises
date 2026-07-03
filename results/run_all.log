@@ -1,0 +1,25 @@
+======================================================================
+MLC exercises -- full verification run
+apache-tvm 0.25.0.post1 | numpy 2.4.6 | torch 2.12.1+cpu
+threads: OMP=3 TVM=3
+======================================================================
+
+[Exercise 1] TensorIR matmul+ReLU (128x128)
+  naive  err vs numpy: 2.29e-05  time: 3.280 ms
+  sched  err vs numpy: 2.29e-05  time: 0.782 ms
+  hand-schedule speedup: 4.19x
+
+[Exercise 2] End-to-end Fashion-MNIST model in Relax
+  emit_te model    err vs torch: 1.19e-07
+  vendor-func model err vs torch: 1.19e-07
+  compiled Relax model Fashion-MNIST test accuracy: 84.50% on 2000 images
+
+[Exercise 3] Automatic program optimization (matmul 512x512)
+  naive matmul time: 169.11 ms
+  random-search best: 7.67 ms  ->  22.05x speedup
+  meta-schedule best: 4.90 ms  ->  34.51x speedup
+
+[Exercise 4] PyTorch -> Relax import (SmallCNN)
+  imported+compiled SmallCNN err vs PyTorch: 1.49e-08
+
+Total wall time: 416.3 s
