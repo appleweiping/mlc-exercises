@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Data / caches (downloaded at runtime, never committed)
+data/
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.tar
+*.tar.gz
+
+# TVM build/tuning artefacts
+*.so
+*.dll
+*.tar
+tuning_logs/
+*.json.tmp
+.tvm_*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep results/ figures + logs (they are the evidence) but ignore scratch
+results/**/*.tmp
